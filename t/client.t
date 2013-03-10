@@ -25,7 +25,9 @@ my $client_lib = {store => 't'};
 
 foreach my $client ($client_net, $client_lib) {
     # clean up data
-    unlink('t/purple.db') || unlink('purple.db');
+    if ($client->{store}) {
+        unlink('t/purple.db') || unlink('purple.db');
+    }
     $client = Purple::Client->new(%$client);
     my $url = 'http://www.example.com/url_one';
 

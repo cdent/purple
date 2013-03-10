@@ -3,7 +3,7 @@ package Purple;
 use warnings;
 use strict;
 
-our $VERSION = '1.2';
+our $VERSION = '1.4';
 
 my $DEFAULT_TYPE = 'SQLite';
 
@@ -31,7 +31,7 @@ Purple - Distributed granular addresses on the web
 
 =head1 VERSION
 
-Version 1.2
+Version 1.4
 
 =head1 SYNOPSIS
 
